@@ -1,0 +1,8 @@
+topic: ~main_menu_dialog()
+language: enu
+
+u:(feedback) $feedback=1 $onStopped=1
+u:(selfie) $selfie=1 press the screen to start the countdown $onStopped=1
+
+u:(e:feedbackMenu) $feedback=1 $onStopped=1
+u:(e:selfieMenu) $selfie=1 press the screen to start the countdown $onStopped=1

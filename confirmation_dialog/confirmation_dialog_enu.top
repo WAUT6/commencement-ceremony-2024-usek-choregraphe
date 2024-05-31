@@ -1,0 +1,33 @@
+topic: ~confirmation_dialog()
+language: enu
+
+include: lexicon_enu.top
+include: concepts.top
+
+# replying to the Intro block question / confirmation webview
+u:(~affirmation) ^gotoReactivate(yesProposal)
+u:(~negation) ^gotoReactivate(noProposal)
+
+u:(e:yesAnswer) ^gotoReactivate(yesProposal)
+u:(e:noAnswer) ^gotoReactivate(noProposal)
+
+proposal: %yesProposal ~joyful Great, let's start $questionNb=1 ^gotoReactivate(next1)            #$onStopped=1 
+proposal: %noProposal  ~neutral Okay no problem. Hope you enjoyed your night. $menuOutput=1 $onStopped=1
+
+proposal: %next1 \pau=1000\ Were the ceremony details and instructions prior to the event clear? 
+    u: (e:yesAnswerOne) ^rand[great awesome perfect "glad to hear that"] $questionNb=2 ^gotoReactivate(next2)
+    u: (e:noAnswerOne)  ^rand["oh sad to hear that" "sorry to hear that, noted" "your remark will be taken into consideration" "we will try ameliorating this service"] $questionNb=2 ^gotoReactivate(next2)
+
+proposal: %next2 \pau=1000\ Did you find the food delicious?
+    u: (e:yesAnswerTwo) ^rand[great awesome perfect "glad to hear that"] $questionNb=3 ^gotoReactivate(next3)
+    u: (e:noAnswerTwo)  ^rand["oh sad to hear that" "sorry to hear that, noted" "your remark will be taken into consideration" "we will try ameliorating this service"] $questionNb=3 ^gotoReactivate(next3)
+
+proposal: %next3 \pau=1000\ Were the organization and seating assistance satisfactory?
+    u: (e:yesAnswerThree) ^rand[great awesome perfect "glad to hear that"] $questionNb=4 ^gotoReactivate(next4)
+    u: (e:noAnswerThree)  ^rand["oh sad to hear that" "sorry to hear that, noted" "your remark will be taken into consideration" "we will try ameliorating this service"] $questionNb=4 ^gotoReactivate(next4)
+
+proposal: %next4 \pau=1000\ Did the ceremony include interesting and entertaining sections?
+    u: (e:yesAnswerFour) ^rand[great awesome perfect "glad to hear that"] $lastQues=1 ^gotoReactivate(next5)
+    u: (e:noAnswerFour)  ^rand["oh sad to hear that" "sorry to hear that, noted" "your remark will be taken into consideration" "we will try ameliorating this service"] $lastQues=1 ^gotoReactivate(next5)
+
+proposal: %next5 \pau=1000\ Please rate your overall experience.  $onStopped=1

@@ -1,0 +1,79 @@
+.bg-box {
+  animation-duration: 0s;
+
+  z-index: 2;
+
+  filter: brightness(1.05);
+
+  transition: 1s ease-in;
+
+  position: relative;
+
+  margin: 2px;
+
+  background: rgb(33, 37, 41);
+}
+
+.bg-box:hover {
+  background: blue;
+
+  transition-duration: 0s;
+}
+
+.background {
+  z-index: -1;
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100vh;
+
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  grid-template-rows: repeat(20, 1fr);
+
+  overflow: hidden;
+}
+
+.cte-background {
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 60px;
+
+  background-color: whitesmoke;
+
+  filter: blur(60px);
+
+  animation: cte-animate 6s linear infinite;
+}
+
+@keyframes cte-animate {
+  0% {
+    top: -60px;
+  }
+
+  100% {
+    top: 120%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .background {
+    grid-template-columns: repeat(20, 0.5fr);
+
+    grid-template-rows: repeat(20, 0.5fr);
+  }
+}

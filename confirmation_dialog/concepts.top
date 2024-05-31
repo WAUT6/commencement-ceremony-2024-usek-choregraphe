@@ -1,0 +1,20 @@
+topic: ~concepts()
+language: enu
+
+concept:(affirmation) [
+  "yes"
+  "sure"
+  "of course"
+  "surely"
+  "why not"
+  "okay"
+]
+
+concept: (negation) [
+  "no"
+  "not now"
+  "later"
+  "maybe later"
+  "not really"
+  "another time"
+]

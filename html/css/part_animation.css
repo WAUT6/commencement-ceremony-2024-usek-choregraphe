@@ -1,0 +1,89 @@
+.bg {
+  border-radius: 10px;
+
+  z-index: 0;
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(20, 1fr);
+
+  grid-template-rows: repeat(5, 1fr);
+
+  overflow: hidden;
+
+  transition: all 1s ease-in-out;
+}
+
+.part-box {
+  margin-left: 2px;
+
+  margin-right: 2px;
+
+  background-color: rgb(185, 186, 187);
+}
+
+.part {
+  transition: transform ease-in-out 1s;
+
+  position: relative;
+
+  color: white;
+}
+
+.part[aria-checked="true"] .cte-bg {
+  display: block;
+
+  transition: all ease 1s;
+}
+
+.cte-bg {
+  display: none;
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  height: 100%;
+
+  width: 30%;
+
+  animation: side-to-side 6s linear infinite alternate;
+
+  transition: all 1s ease-in-out;
+
+  background-color: #ffffff;
+
+  filter: blur(60px);
+}
+
+.inner-title {
+  z-index: 1;
+}
+
+/* #course-info div.part:nth-child(n) {
+
+  animation-delay: calc(0.1s * n);
+
+} */
+
+@keyframes side-to-side {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 80%;
+  }
+}

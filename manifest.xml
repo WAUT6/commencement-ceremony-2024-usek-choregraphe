@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="graduationceremony-b21c84" version="0.0.0">
+ <names>
+  <name lang="en_US">Untitled</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="feedback_behavior">
+   <userRequestable/>
+   <nature>interactive</nature>
+   <names>
+    <name lang="en_US">feedback_behavior</name>
+   </names>
+   <triggerSentences/>
+   <loadingResponses/>
+   <autonomous/>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="menu_behavior">
+   <userRequestable/>
+   <nature>interactive</nature>
+   <names>
+    <name lang="en_US">menu_behavior</name>
+   </names>
+   <triggerSentences/>
+   <loadingResponses/>
+   <autonomous/>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="selfie_raw_behavior">
+   <userRequestable/>
+   <nature>interactive</nature>
+   <triggerSentences/>
+   <loadingResponses/>
+   <autonomous/>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="selfie_looped">
+   <nature>interactive</nature>
+   <triggerSentences/>
+   <loadingResponses/>
+   <autonomous/>
+   <permissions/>
+  </behaviorContent>
+  <dialogContent topicName="confirmation_dialog" typeVersion="1.0">
+   <topic language="en_US" path="confirmation_dialog/confirmation_dialog_enu.top"/>
+  </dialogContent>
+ </contents>
+</package>
