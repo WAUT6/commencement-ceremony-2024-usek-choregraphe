@@ -81,6 +81,9 @@
         <File name="pepper-selfie-pic" src="html/pics/pepper-selfie-pic.jpg" />
         <File name="picture_now" src="html/pages/picture_now.html" />
         <File name="enjoy" src="html/pages/enjoy.html" />
+        <File name="LICENSE" src="LICENSE" />
+        <File name="logo-99" src="html/pics/logo-99.jpg" />
+        <File name="logo-hurricane" src="html/pics/logo-hurricane.jpg" />
     </Resources>
     <Topics>
         <Topic name="confirmation_dialog_enu" src="confirmation_dialog/confirmation_dialog_enu.top" topicName="confirmation_dialog" language="en_US" />

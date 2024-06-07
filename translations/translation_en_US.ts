@@ -36,6 +36,20 @@
         </message>
     </context>
     <context>
+        <name>feedback_behavior/behavior.xar:/Say</name>
+        <message>
+            <source>Hello</source>
+            <comment>Text</comment>
+            <translation type="vanished">Hello</translation>
+        </message>
+        <message>
+            <location filename="feedback_behavior/behavior.xar" line="0"/>
+            <source>Please rate your overall experience.</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Please rate your overall experience.</translation>
+        </message>
+    </context>
+    <context>
         <name>menu_behavior/behavior.xar:/Animated Say</name>
         <message>
             <source>Hello</source>
@@ -113,11 +127,44 @@
         </message>
     </context>
     <context>
+        <name>selfie_looped/behavior.xar:/Say (1)</name>
+        <message>
+            <source>Hello</source>
+            <comment>Text</comment>
+            <translation type="vanished">Hello</translation>
+        </message>
+        <message>
+            <location filename="selfie_looped/behavior.xar" line="0"/>
+            <source>Enjoy your night</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Enjoy your night</translation>
+        </message>
+    </context>
+    <context>
         <name>selfie_raw_behavior/behavior.xar:/Picture Ready</name>
         <message>
             <source>press the screen to start the countdown</source>
             <comment>Text</comment>
             <translation type="obsolete">press the screen to start the countdown</translation>
+        </message>
+    </context>
+    <context>
+        <name>selfie_raw_behavior/behavior.xar:/Say</name>
+        <message>
+            <source>Hello</source>
+            <comment>Text</comment>
+            <translation type="vanished">Hello</translation>
+        </message>
+        <message>
+            <source>CHEEEEESE</source>
+            <comment>Text</comment>
+            <translation type="obsolete">CHEEEEESE</translation>
+        </message>
+        <message>
+            <location filename="selfie_raw_behavior/behavior.xar" line="0"/>
+            <source>CHEESE</source>
+            <comment>Text</comment>
+            <translation type="unfinished">CHEESE</translation>
         </message>
     </context>
 </TS>
