@@ -1,10 +1,12 @@
 topic: ~picture_dialog()
 language: enu
 
-proposal: %startCountdown 5 \pau=1000\ 4 \pau=1000\ 3 \pau=1000\ 2 \pau=1000\ 1 \pau=1000\  $onStopped=1
+include: lexicon_enu.top
 
-u:(start)  $startTimer=1 ^goto(startCountdown)
-u:(e:timerStarted) $startTimer=1 ^goto(startCountdown)
+proposal: %startCountdown 3 \pau=1000\ 2 \pau=1000\ 1 \pau=1000\ ~joyful $onStopped=1
+proposal: %welcomePhrase $showLogo=1 Welcome to the 2024 commencement ceremony, lets start the countdown \pau=500\
+u:(start)  ^goto(welcomePhrase) $startTimer=1  ^goto(startCountdown)
+u:(e:timerStarted) ^goto(welcomePhrase) $startTimer=1  ^goto(startCountdown)
 
 # Defining extra concepts out of words or group of words
 #concept:(hello) [hello hi hey "good morning" greetings]

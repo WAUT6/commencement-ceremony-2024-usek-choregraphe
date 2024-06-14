@@ -124,7 +124,8 @@
             <button
               type="button"
               id="noButton"
-              onclick="raiseConfirmationEvent('noAnswer')"
+              onclick="raiseConfirmationEvent('noAnswer');
+              "
               class="fa rate-button rounded-rect-btn brown-btn"
               style="font-size: 40px; margin-right: 50pt"
             >
@@ -134,7 +135,7 @@
             <button
               type="button"
               id="yesButton"
-              onclick="raiseConfirmationEvent('yesAnswer')"
+              onclick="document.querySelector('#yesButton').disabled = true;raiseConfirmationEvent('yesAnswer');"
               class="fa rate-button rounded-rect-btn green-btn"
               style="font-size: 40px"
             >

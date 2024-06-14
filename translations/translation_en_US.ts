@@ -20,19 +20,23 @@
     <context>
         <name>feedback_behavior/behavior.xar:/End</name>
         <message>
-            <location filename="feedback_behavior/behavior.xar" line="0"/>
             <source>Goodbye</source>
             <comment>Text</comment>
-            <translation type="unfinished">Goodbye</translation>
+            <translation type="obsolete">Goodbye</translation>
         </message>
     </context>
     <context>
         <name>feedback_behavior/behavior.xar:/Intro</name>
         <message>
-            <location filename="feedback_behavior/behavior.xar" line="0"/>
             <source>Good evening, would you like to complete a feedback?</source>
             <comment>Text</comment>
-            <translation type="unfinished">Good evening, would you like to complete a feedback?</translation>
+            <translation type="obsolete">Good evening, would you like to complete a feedback?</translation>
+        </message>
+        <message>
+            <location filename="feedback_behavior/behavior.xar" line="0"/>
+            <source>Are you ready to start?</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Are you ready to start?</translation>
         </message>
     </context>
     <context>
@@ -50,6 +54,20 @@
         </message>
     </context>
     <context>
+        <name>feedback_behavior/behavior.xar:/Say (1)</name>
+        <message>
+            <source>Hello</source>
+            <comment>Text</comment>
+            <translation type="vanished">Hello</translation>
+        </message>
+        <message>
+            <location filename="feedback_behavior/behavior.xar" line="0"/>
+            <source>goodbye</source>
+            <comment>Text</comment>
+            <translation type="unfinished">goodbye</translation>
+        </message>
+    </context>
+    <context>
         <name>menu_behavior/behavior.xar:/Animated Say</name>
         <message>
             <source>Hello</source>
@@ -62,10 +80,9 @@
             <translation type="obsolete">Please Select an option</translation>
         </message>
         <message>
-            <location filename="menu_behavior/behavior.xar" line="0"/>
             <source>welcome to the 2024 commencement ceremony, please select an option</source>
             <comment>Text</comment>
-            <translation type="unfinished">welcome to the 2024 commencement ceremony, please select an option</translation>
+            <translation type="obsolete">welcome to the 2024 commencement ceremony, please select an option</translation>
         </message>
     </context>
     <context>
@@ -92,6 +109,12 @@
             <source>Press the screen to start the countdown</source>
             <comment>Text</comment>
             <translation type="obsolete">Press the screen to start the countdown</translation>
+        </message>
+        <message>
+            <location filename="menu_behavior/behavior.xar" line="0"/>
+            <source>Enjoy your night</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Enjoy your night</translation>
         </message>
     </context>
     <context>
@@ -120,10 +143,9 @@
             <translation type="vanished">Hello</translation>
         </message>
         <message>
-            <location filename="selfie_looped/behavior.xar" line="0"/>
             <source>Welcome to the commencement ceremony, would you like to take a selfie?</source>
             <comment>Text</comment>
-            <translation type="unfinished">Welcome to the commencement ceremony, would you like to take a selfie?</translation>
+            <translation type="obsolete">Welcome to the commencement ceremony, would you like to take a selfie?</translation>
         </message>
     </context>
     <context>
@@ -138,6 +160,25 @@
             <source>Enjoy your night</source>
             <comment>Text</comment>
             <translation type="unfinished">Enjoy your night</translation>
+        </message>
+    </context>
+    <context>
+        <name>selfie_raw_behavior/behavior.xar:/Animated Say</name>
+        <message>
+            <source>Hello</source>
+            <comment>Text</comment>
+            <translation type="vanished">Hello</translation>
+        </message>
+        <message>
+            <source>say cheese</source>
+            <comment>Text</comment>
+            <translation type="obsolete">say cheese</translation>
+        </message>
+        <message>
+            <location filename="selfie_raw_behavior/behavior.xar" line="0"/>
+            <source>say cheese </source>
+            <comment>Text</comment>
+            <translation type="unfinished">say cheese </translation>
         </message>
     </context>
     <context>
@@ -161,10 +202,20 @@
             <translation type="obsolete">CHEEEEESE</translation>
         </message>
         <message>
-            <location filename="selfie_raw_behavior/behavior.xar" line="0"/>
             <source>CHEESE</source>
             <comment>Text</comment>
-            <translation type="unfinished">CHEESE</translation>
+            <translation type="obsolete">CHEESE</translation>
+        </message>
+        <message>
+            <source>~joyful say cheese ~neutral</source>
+            <comment>Text</comment>
+            <translation type="obsolete">~joyful say cheese ~neutral</translation>
+        </message>
+        <message>
+            <location filename="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../WINDOWS/System32/translations/selfie_raw_behavior/behavior.xar" line="0"/>
+            <source></source>
+            <comment>Text</comment>
+            <translation></translation>
         </message>
     </context>
 </TS>

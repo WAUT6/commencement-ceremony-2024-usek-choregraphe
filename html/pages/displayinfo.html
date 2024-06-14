@@ -96,7 +96,7 @@
             <button
               type="button"
               id="noButton"
-              onclick="raiseEvent('dataToDatabase', [getUrlParam('pageContext', ''), 'No']);raiseConfirmationEventWithParameter('noAnswer');"
+              onclick="document.querySelector('#noButton').disabled = true;document.querySelector('#yesButton').disabled = true;raiseEvent('dataToDatabase', [getUrlParam('pageContext', ''), 'No']);raiseConfirmationEventWithParameter('noAnswer');"
               class="fa rate-button rounded-rect-btn brown-btn"
               style="font-size: 40px; margin-right: 50pt"
             >
@@ -104,7 +104,7 @@
               <span class="default-font">No</span>
             </button>
             <button
-              onclick="raiseEvent('dataToDatabase', [getUrlParam('pageContext', ''), 'Yes']);raiseConfirmationEventWithParameter('yesAnswer');"
+              onclick="document.querySelector('#yesButton').disabled = true;document.querySelector('#noButton').disabled = true;raiseEvent('dataToDatabase', [getUrlParam('pageContext', ''), 'Yes']);raiseConfirmationEventWithParameter('yesAnswer');"
               type="button"
               id="yesButton"
               class="fa rate-button rounded-rect-btn green-btn yesButton"

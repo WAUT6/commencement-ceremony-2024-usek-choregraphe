@@ -11,23 +11,33 @@ u:(~negation) ^gotoReactivate(noProposal)
 u:(e:yesAnswer) ^gotoReactivate(yesProposal)
 u:(e:noAnswer) ^gotoReactivate(noProposal)
 
-proposal: %yesProposal ~joyful Great, let's start $questionNb=1 ^gotoReactivate(next1)            #$onStopped=1 
+concept: (yesAnswers) ~joyful ^rand[great awesome perfect "glad to hear that"] ~neutral
+concept: (noAnswers) ^rand["oh sad to hear that" "sorry to hear that, noted" "your remark will be taken into consideration" "we will try improving this service"]
+
+proposal: %yesProposal ~joyful Great, let's start $questionNb=1 ~neutral  ^gotoReactivate(next1) 
 proposal: %noProposal  ~neutral Okay no problem. Hope you enjoyed your night. $menuOutput=1 $onStopped=1
 
 proposal: %next1 \pau=1000\ Were the ceremony details and instructions prior to the event clear? 
-    u: (e:yesAnswerOne) ^rand[great awesome perfect "glad to hear that"] $questionNb=2 ^gotoReactivate(next2)
-    u: (e:noAnswerOne)  ^rand["oh sad to hear that" "sorry to hear that, noted" "your remark will be taken into consideration" "we will try improving this service"] $questionNb=2 ^gotoReactivate(next2)
+    u1: (e:yesAnswerOne)  ~yesAnswers $questionNb=2  ^gotoReactivate(next2)
+    u1: (e:noAnswerOne) ~noAnswers $questionNb=2 ^gotoReactivate(next2)
+    u1:(~affirmation) ~yesAnswers $questionNb=2 ^gotoReactivate(next2)
+    u1:(~negation) ~noAnswers $questionNb=2 ^gotoReactivate(next2)
 
 proposal: %next2 \pau=1000\ Did you find the food delicious?
-    u: (e:yesAnswerTwo) ^rand[great awesome perfect "glad to hear that"] $questionNb=3 ^gotoReactivate(next3)
-    u: (e:noAnswerTwo)  ^rand["oh sad to hear that" "sorry to hear that, noted" "your remark will be taken into consideration" "we will try improving this service"] $questionNb=3 ^gotoReactivate(next3)
+    u1: (e:yesAnswerTwo) ~yesAnswers $questionNb=3 ^gotoReactivate(next3)
+    u1: (e:noAnswerTwo) ~noAnswers $questionNb=3 ^gotoReactivate(next3)
+    u1:(~affirmation) ~yesAnswers $questionNb=3 ^gotoReactivate(next3)
+    u1:(~negation) ~noAnswers $questionNb=3 ^gotoReactivate(next3)
 
 proposal: %next3 \pau=1000\ Were the organization and seating assistance satisfactory?
-    u: (e:yesAnswerThree) ^rand[great awesome perfect "glad to hear that"] $questionNb=4 ^gotoReactivate(next4)
-    u: (e:noAnswerThree)  ^rand["oh sad to hear that" "sorry to hear that, noted" "your remark will be taken into consideration" "we will try improving this service"] $questionNb=4 ^gotoReactivate(next4)
+    u1: (e:yesAnswerThree) ~yesAnswers $questionNb=4 ^gotoReactivate(next4)
+    u1: (e:noAnswerThree) ~noAnswers $questionNb=4 ^gotoReactivate(next4)
+    u1:(~affirmation) ~yesAnswers $questionNb=4 ^gotoReactivate(next4)
+    u1:(~negation) ~noAnswers $questionNb=4 ^gotoReactivate(next4)
 
 proposal: %next4 \pau=1000\ Did the ceremony include interesting and entertaining sections?
-    u: (e:yesAnswerFour) ^rand[great awesome perfect "glad to hear that"] $lastQues=1 ^gotoReactivate(next5)
-    u: (e:noAnswerFour)  ^rand["oh sad to hear that" "sorry to hear that, noted" "your remark will be taken into consideration" "we will try improving this service"] $lastQues=1 ^gotoReactivate(next5)
-
+    u1: (e:yesAnswerFour) ~yesAnswers $lastQues=1 ^gotoReactivate(next5)
+    u1: (e:noAnswerFour)  ~noAnswers $lastQues=1 ^gotoReactivate(next5)
+    u1:(~affirmation) ~yesAnswers $lastQues=1 ^gotoReactivate(next5)
+    u1:(~negation) ~noAnswers $lastQues=1 ^gotoReactivate(next5)
 proposal: %next5  $onStopped=1   
